@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Base e Navegação</title>
+
+    <!-- ==== Arquivos CSS Base ==== -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- ==== Main Container Começo ==== -->
+    <div class="main-container">
+
+        <!-- ==== Navegação Lateral (Aside/Menu) Começo ==== -->
+        <aside class="aside">
+            <div class="logo">
+                <a href="#"><span>P</span>edro</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#sobre"><i class="fa fa-user"></i> Sobre mim</a></li>
+                <li><a href="#servico"><i class="fa fa-list"></i> Experiências</a></li>
+                <li><a href="#portifolio"><i class="fa fa-briefcase"></i> Projetos</a></li>
+                <li><a href="#contato"><i class="fa fa-comments"></i> Contato</a></li>
+            </ul>
+        </aside>
+        <!-- ==== Navegação Lateral Fim ==== -->
+
+        <!-- ==== Área de Conteúdo Principal Começo ==== -->
+        <main class="main-content">
+
+            <!-- ==== Seção Home ==== -->
+            <section class="home section" id="home">
+                <div class="container">
+                    <div class="row">
+                        <h2>Página Inicial</h2>
+                        <p>Área reservada para apresentação inicial.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==== Seção Sobre ==== -->
+            <section class="sobre section" id="sobre">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Sobre Mim</h2>
+                        </div>
+                    </div>
+                    <div class="row padd-15">
+                        <p>Área reservada para dados pessoais, escolaridade e experiência.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==== Seção Serviços ==== -->
+            <section class="servico section" id="servico">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Experiência</h2>
+                        </div>
+                    </div>
+                    <div class="row padd-15">
+                        <p>Área reservada para os cards detalhando a experiência profissional.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==== Seção Portfólio ==== -->
+            <section class="portifolio section" id="portifolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Projetos</h2>
+                        </div>
+                    </div>
+                    <div class="row padd-15">
+                        <p>Área reservada para a galeria de imagens e links dos projetos.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==== Seção Contato ==== -->
+            <section class="contato section" id="contato">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Entre em Contato</h2>
+                        </div>
+                    </div>
+                    <div class="row padd-15">
+                        <p>Área reservada para as informações de contato e formulário de envio de mensagens.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- ==== Rodapé Começo ==== -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Pedro Augusto. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+        <!-- ==== Rodapé Fim ==== -->
+
+        </main>
+    </div>
+    <!-- ==== JS Base para navegação ==== -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
