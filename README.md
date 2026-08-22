@@ -76,3 +76,4 @@ Pedro Augusto Periceles de Paiva Milarde
 ## 🔗 Links
 
 - **GitHub:** (https://github.com/PedroPericeles/Portif-lio-Profissional)
+- **Figma:** https://www.figma.com/design/ivAzAGIBmCISmArPOBIMTG/PORTIFOLIO?node-id=0-1&t=ngCzFc9Zt1ecFoAb-1
