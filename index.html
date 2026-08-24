@@ -2,121 +2,587 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Base e Navegação</title>
-
-    <!-- ==== Arquivos CSS Base ==== -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu site</title>
+  <!-- ==== Arquivos CSS ==== -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/skins/color-1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- ==== Style Sitcher ==== -->
+  <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+  <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+  <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+  <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+  <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+  <link rel="stylesheet" href="css/style-switcher.css">
 </head>
 
 <body>
-    <!-- ==== Main Container Começo ==== -->
-    <div class="main-container">
-
-        <!-- ==== Navegação Lateral (Aside/Menu) Começo ==== -->
-        <aside class="aside">
-            <div class="logo">
-                <a href="#"><span>P</span>edro</a>
-            </div>
-            <div class="nav-toggler">
-                <span></span>
-            </div>
-            <ul class="nav">
-                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#sobre"><i class="fa fa-user"></i> Sobre mim</a></li>
-                <li><a href="#servico"><i class="fa fa-list"></i> Experiências</a></li>
-                <li><a href="#portifolio"><i class="fa fa-briefcase"></i> Projetos</a></li>
-                <li><a href="#contato"><i class="fa fa-comments"></i> Contato</a></li>
-            </ul>
-        </aside>
-        <!-- ==== Navegação Lateral Fim ==== -->
-
-        <!-- ==== Área de Conteúdo Principal Começo ==== -->
-        <main class="main-content">
-
-            <!-- ==== Seção Home ==== -->
-            <section class="home section" id="home">
-                <div class="container">
-                    <div class="row">
-                        <h2>Página Inicial</h2>
-                        <p>Área reservada para apresentação inicial.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ==== Seção Sobre ==== -->
-            <section class="sobre section" id="sobre">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Sobre Mim</h2>
-                        </div>
-                    </div>
-                    <div class="row padd-15">
-                        <p>Área reservada para dados pessoais, escolaridade e experiência.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ==== Seção Serviços ==== -->
-            <section class="servico section" id="servico">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Experiência</h2>
-                        </div>
-                    </div>
-                    <div class="row padd-15">
-                        <p>Área reservada para os cards detalhando a experiência profissional.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ==== Seção Portfólio ==== -->
-            <section class="portifolio section" id="portifolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Projetos</h2>
-                        </div>
-                    </div>
-                    <div class="row padd-15">
-                        <p>Área reservada para a galeria de imagens e links dos projetos.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ==== Seção Contato ==== -->
-            <section class="contato section" id="contato">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Entre em Contato</h2>
-                        </div>
-                    </div>
-                    <div class="row padd-15">
-                        <p>Área reservada para as informações de contato e formulário de envio de mensagens.</p>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-        <!-- ==== Rodapé Começo ==== -->
-        <footer class="footer">
-            <div class="container">
-                <p>&copy; 2024 Pedro Augusto. Todos os direitos reservados.</p>
-            </div>
-        </footer>
-        <!-- ==== Rodapé Fim ==== -->
-
-        </main>
+  <!-- ==== Main Container Começo ==== -->
+  <div class="main-container">
+    <!-- ==== Aside Começo ==== -->
+    <div class="aside">
+      <div class="logo">
+        <a href="#"><span>P</span>edro</a>
+      </div>
+      <div class="nav-toggler">
+        <span> </span>
+      </div>
+      <ul class="nav">
+        <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#sobre"><i class="fa fa-user"></i> Sobre</a></li>
+        <li><a href="#servico"><i class="fa fa-list"></i>Serviços</a></li>
+        <li><a href="#portifolio"><i class="fa fa-briefcase"></i>Portifolio</a></li>
+        <li><a href="#contato"><i class="fa fa-comments"></i>Contato</a></li>
+      </ul>
     </div>
-    <!-- ==== JS Base para navegação ==== -->
-    <script src="js/script.js"></script>
-</body>
+    <!-- ==== Aside Fim ==== -->
+    <!-- ==== Main Content Começo ==== -->
+    <div class="main-content">
+      <!-- ==== Home Content Começo ==== -->
+      <section class="home section" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="home-info">
+              <h3 class="hello">Olá, meu nome é <span class="nome">Pedro Augusto</span></h3>
+              <h3 class="my-profession">Eu sou um <span class="typing">Engenheiro de Software</span></h3>
+              <p> </p>
+              <div class="social-links">
+                <a href="https://github.com/pedropericeles" class="btn social-link" target="_blank"
+                  rel="noopener noreferrer" aria-label="GitHub">
+                  <i class="fa-brands fa-github"></i> 
+                </a>
+                <a href="https://www.linkedin.com/in/seu-usuario" class="btn social-link" target="_blank"
+                  rel="noopener noreferrer" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i> 
+                </a>
+                <a href="https://www.instagram.com/pedro_periceles" class="btn social-link" target="_blank"
+                  rel="noopener noreferrer" aria-label="Instagram">
+                  <i class="fa-brands fa-instagram"></i> 
+                </a>
+              </div>
+            </div>
+            <div class="home-img padd-15">
+              <img src="imagens/IMG-portifolio.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==== Home Content Fim ==== -->
+      <!-- ==== Sobre Section Começo ==== -->
+      <section class="sobre section" id="sobre">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Sobre Mim</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="sobre-content padd-15">
+              <div class="row">
+                <div class="sobre-text padd-15">
+                  <h3>Eu sou Pedro Augusto e faço <span>Engenharia de Software</span></h3>
+                  <p>Sou um desenvolvedor com foco em Full Stack residente em Belo
+                    Horizonte, MG. Atualmente, estou cursando Engenharia de Software na Puc Minas, buscando sempre unir
+                    a
+                    teoria acadêmica com a prática do mercado.
+
+                    Minha jornada profissional começou com atuações como Suporte de TI e Designer Gráfico, experiências
+                    que me deram uma visão sistêmica valiosa sobre infraestrutura, resolução de problemas e estética de
+                    interfaces. Hoje, meu principal foco e interesse acadêmico estão voltados para o desenvolvimento
+                    Back-end, Redes de Computadores e Engenharia de Software.
+
+                    Possuo conhecimentos fundamentais em HTML, CSS, JavaScript , além de linguagens como C e C#, e
+                    no momento estou focado em aprender aprimorar Java. Estou na fase de descobrir e consolidar
+                    conceitos
+                    essenciais, colocando a mão na massa em projetos acadêmicos.
+
+                    Sou movido por desafios e pela vontade de aprender. Meu objetivo é absorver o máximo de conhecimento
+                    prático, aprimorar minhas habilidades a cada linha de código e construir uma carreira sólida na área
+                    de tecnologia.
+
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="informacao-pessoal padd-15">
+                  <div class="row">
+                    <div class="info-item padd-15">
+                      <P>Nascimento : <span>19 Jun 2003</span></P>
+                    </div>
+                    <div class="info-item padd-15">
+                      <P>Idade : <span>23</span></P>
+                    </div>
+                    <div class="info-item padd-15">
+                      <P>Website : <span>www.domain.com</span></P>
+                    </div>
+                    <div class="info-item padd-15">
+                      <P>Email : <span>pedropericeles@gmail.com</span></P>
+                    </div>
+                    <div class="info-item padd-15">
+                      <P> Escolariedade : <span>Cursando Engenharia de Software</span></P>
+                    </div>
+                    <div class="info-item padd-15">
+                      <P>Telefone : <span>(31)9 8489-0146</span></P>
+                    </div>
+                    <div class="info-item padd-15">
+                      <P>Cidade : <span>Belo Horizonte</span></P>
+                    </div>
+                    <div class="info-item padd-15">
+                      <P>Situação : <span>Em busca de um emprego</span></P>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="buttons padd-15">
+                      <a href="#" class="btn">Dowload Currículo</a>
+                      <a href="#contato" class="btn hire-me">Me Contrate</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills padd-15">
+                  <div class="row">
+                    <div class="skill-item padd-15">
+                      <h5>JS</h5>
+                      <div class="progresso">
+                        <div class="progresso-in" style="width: 50%;""></div>
+                        <div class=" skill-porcentagem">50%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>PHP</h5>
+                      <div class="progresso">
+                        <div class="progresso-in" style="width: 66%;""></div>
+                        <div class=" skill-porcentagem">66%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>HTML</h5>
+                      <div class="progresso">
+                        <div class="progresso-in" style="width: 80%;""></div>
+                        <div class=" skill-porcentagem">80%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>Bootstrap</h5>
+                      <div class="progresso">
+                        <div class="progresso-in" style="width: 70%;""></div>
+                        <div class=" skill-porcentagem">70%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="escolariedade padd-15">
+                  <h3 class="title">Escolariedade</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!-- ==== timeline item ==== -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-data">
+                            <i class="fa fa-calendar"></i> 2019 - 2021
+                          </h3>
+                          <h4 class="timeline-title">Escola Presidente Dutra</h4>
+                          <p class="timeline-text">Em 2021, formei-me na escola estadual presidente dutra.</p>
+                        </div>
+                        <!-- ==== timeline item ==== -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-data">
+                            <i class="fa fa-calendar"></i> 2022
+                          </h3>
+                          <h4 class="timeline-title">Curso de Jogos Digitais</h4>
+                          <p class="timeline-text">Comecei a estudar programação de jogos. Estou animado
+                            para mergulhar nos conceitos e linguagens de programação, ansioso para criar minhas próprias
+                            experiências interativas. Cada linha de código é um passo em direção ao meu objetivo de
+                            dominar essa arte e desenvolver jogos envolventes.</p>
+                        </div>
+                        <!-- ==== timeline item ==== -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-data">
+                            <i class="fa fa-calendar"></i> Fev 2023 - Dez 2023
+                          </h3>
+                          <h4 class="timeline-title">Aulas de Manunteção de Computadores</h4>
+                          <p class="timeline-text">Aventurei-me em áreas desafiadoras, aceitando um treinamento para
+                            atuar
+                            na área de manutenção. Assim, trabalhando principalmente com o hardware de diversos
+                            computadores, aprendi muitas novas habilidades das quais não tinha conhecimento. Estou
+                            sempre buscando novos conhecimentos e aprimorando minha habilidade de manusear os
+                            componentes presentes em uma máquina.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="experiencia padd-15">
+                  <h3 class="title">Experiência</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!-- ==== timeline item ==== -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-data">
+                            <i class="fa fa-calendar"></i> Fev 2023 - Nov 2023
+                          </h3>
+                          <h4 class="timeline-title">Suporte de TI</h4>
+                          <p class="timeline-text">Como meu primeiro emprego na área de TI consegui um estágio, em uma
+                            empresa onde atuei prestando o
+                            auxílio necessário aos funcionarios da mesma, realizando manunteções de hardware e de
+                            software.</p>
+                        </div>
+                        <!-- ==== timeline item ==== -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-data">
+                            <i class="fa fa-calendar"></i> Dez 2023 - Mai 2024
+                          </h3>
+                          <h4 class="timeline-title">Designer Gráfico</h4>
+                          <p class="timeline-text">Tentando aprimorar minhas habilidades na área de design, consegui
+                            passar um periodo de tempo
+                            atuando como designer gráfico, sempre busquei ampliar minha área de atuação sendo assim
+                            foquei meus esforçoes em
+                            conseguir absorver o máximo de conhecimento possível e conseguir evoluir na área.</p>
+                        </div>
+                        <!-- ==== timeline item ==== -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-data">
+                            <i class=""></i>
+                          </h3>
+                          <h4 class="timeline-title"></h4>
+                          <p class="timeline-text"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==== Sobre Section Fim ==== -->
+      <!-- ==== Serviços Section Começo ==== -->
+      <section class="servico section" id="servico">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Experiencia</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- ==== Serviço item Começo ==== -->
+            <div class="servico-item padd-15">
+              <div class="servico-item-inner">
+                <div class="icon">
+                  <i class="fa fa-mobile-alt"></i>
+                </div>
+                <h4>Web Design</h4>
+                <p>Atuo com web design, criando interfaces visuais impactantes e funcionais para diversos projetos
+                  online.</p>
+              </div>
+            </div>
+            <!-- ==== Serviço item Fim ==== -->
+            <!-- ==== Serviço item Começo ==== -->
+            <div class="servico-item padd-15">
+              <div class="servico-item-inner">
+                <div class="icon">
+                  <i class="fa fa-laptop-code"></i>
+                </div>
+                <h4>Progamação Basica de Web</h4>
+                <p>Trabalho com programação web, desenvolvendo soluções inovadoras e únicas para qualquer finalidade.
+                </p>
+              </div>
+            </div>
+            <!-- ==== Serviço item Fim ==== -->
+            <!-- ==== Serviço item Começo ==== -->
+            <div class="servico-item padd-15">
+              <div class="servico-item-inner">
+                <div class="icon">
+                  <i class="fa fa-palette"></i>
+                </div>
+                <h4>Design Gráfico</h4>
+                <p>No design gráfico, crio identidades visuais impactantes e experiências estéticas
+                  memoráveis.</p>
+              </div>
+            </div>
+            <!-- ==== Serviço item Fim ==== -->
+            <!-- ==== Serviço item Começo ==== -->
+            <div class="servico-item padd-15">
+              <div class="servico-item-inner">
+                <div class="icon">
+                  <i class="fa fa-code"></i>
+                </div>
+                <h4>Banco de Dados</h4>
+                <p>Busco gerenciar e otimizar sistemas de armazenamento de informações para
+                  garantir eficiência e segurança.</p>
+              </div>
+            </div>
+            <!-- ==== Serviço item Fim ==== -->
+            <!-- ==== Serviço item Começo ==== -->
+            <div class="servico-item padd-15">
+              <div class="servico-item-inner">
+                <div class="icon">
+                  <i class="fa fa-search"></i>
+                </div>
+                <h4>Foco em Full Developer</h4>
+                <p>Estou focado em me especializar como um desenvolvedor full stack, buscando dominar tanto o front-end
+                  quanto o back-end.</p>
+              </div>
+            </div>
+            <!-- ==== Serviço item Fim ==== -->
+            <!-- ==== Serviço item Começo ==== -->
+            <div class="servico-item padd-15">
+              <div class="servico-item-inner">
+                <div class="icon">
+                  <i class="fa fa-bullhorn"></i>
+                </div>
+                <h4>Atenção</h4>
+                <p>Estou na metade da minha carreira no mundo da programação,
+                  pronto para enfrentar desafios e crescer profissionalmente neste campo.</p>
+              </div>
+            </div>
+            <!-- ==== Serviço item Fim ==== -->
+          </div>
+        </div>
+      </section>
+      <!-- ==== Serviços Section Fim ==== -->
+      <!-- ==== Portifolio Section Começo ==== -->
+      <section class="portifolio section" id="portifolio">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Portifolio</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="portifolio-heading padd-15">
+              <h2>Meus ultímos Projetos :</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- ==== portifolio itens start ==== -->
+            <div class="portifolio-item padd-15">
+              <div class="portifolio-item-inner shadow-dark">
+                <div class="portifolio-img">
+                  <img src="imagens/Projetos/imagem-portCRU.png" alt="Prévia do projeto CRUD">
+                </div>
+                <div class="portifolio-info">
+                  <h3>Projeto 1</h3>
+                  <p>Blog do Cruzeiro para contar sua historia.</p>
+                  <a href="https://github.com/pedropericeles/Blog-Cruzeiro" target="_blank"
+                    rel="noopener noreferrer">Ver projeto <i class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- ==== portifolio itens fim ==== -->
+            <!-- ==== portifolio itens start ==== -->
+            <div class="portifolio-item padd-15">
+              <div class="portifolio-item-inner shadow-dark">
+                <div class="portifolio-img">
+                  <img src="imagens/Projetos/imagem-portLocaApp.png" alt="Prévia do projeto 2">
+                </div>
+                <div class="portifolio-info">
+                  <h3>Projeto 2</h3>
+                  <p>Sistema de gerenciamento de uma locadora de carros, desenvolvido com SQL.</p>
+                  <a href="https://github.com/pedropericeles/Node.App" target="_blank" rel="noopener noreferrer">Ver
+                    projeto <i class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- ==== portifolio itens fim ==== -->
+            <!-- ==== portifolio itens start ==== -->
+            <div class="portifolio-item padd-15">
+              <div class="portifolio-item-inner shadow-dark">
+                <div class="portifolio-img">
+                  <img src="imagens/Projetos/imagem-portJogo.png" alt="Prévia do projeto 3">
+                </div>
+                <div class="portifolio-info">
+                  <h3>Projeto 3</h3>
+                  <p>Jogo de Aeronave feito em C#.</p>
+                  <a href="https://github.com/pedropericeles/seu-projeto-3" target="_blank"
+                    rel="noopener noreferrer">Ver projeto <i class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- ==== portifolio itens fim ==== -->
+            <!-- ==== portifolio itens start ==== -->
+            <div class="portifolio-item padd-15">
+              <div class="portifolio-item-inner shadow-dark">
+                <div class="portifolio-img">
+                  <img src="imagens/Projetos/imagem-portRHsoft.png" alt="Prévia do projeto 4">
+                </div>
+                <div class="portifolio-info">
+                  <h3>Projeto 4</h3>
+                  <p>Sistema de Hospedagem.</p>
+                  <a href="https://github.com/pedropericeles/trabalho-pratico-xulambs" target="_blank"
+                    rel="noopener noreferrer">Ver projeto <i class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- ==== portifolio itens fim ==== -->
+            <!-- ==== portifolio itens start ==== -->
+            <div class="portifolio-item padd-15">
+              <div class="portifolio-item-inner shadow-dark">
+                <div class="portifolio-img">
+                  <img src="imagens/Projetos/imagem-portProj5.png" alt="Prévia do projeto 5">
+                </div>
+                <div class="portifolio-info">
+                  <h3>Projeto 5</h3>
+                  <p>Escreva aqui um resumo curto sobre este projeto.</p>
+                  <a href="https://github.com/pedropericeles/seu-projeto-5" target="_blank"
+                    rel="noopener noreferrer">Ver projeto <i class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- ==== portifolio itens fim ==== -->
+            <!-- ==== portifolio itens start ==== -->
+            <div class="portifolio-item padd-15">
+              <div class="portifolio-item-inner shadow-dark">
+                <div class="portifolio-img">
+                  <img src="imagens/Projetos/imagem-portProj6.png" alt="Prévia do projeto 6">
+                </div>
+                <div class="portifolio-info">
+                  <h3>Projeto 6</h3>
+                  <p>Escreva aqui um resumo curto sobre este projeto.</p>
+                  <a href="https://github.com/pedropericeles/seu-projeto-6" target="_blank"
+                    rel="noopener noreferrer">Ver projeto <i class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- ==== portifolio itens fim ==== -->
+          </div>
+        </div>
+      </section>
+      <!-- ==== Portifolio Section Fim ==== -->
+      <!-- ==== contato Section Começo ==== -->
+      <section class="contato section" id="contato">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Entre em Contato</h2>
+            </div>
+          </div>
+          <h3 class="contato-title"> Você Tem Alguma Pergunta ?</h3>
+          <h4 class="contato-sub-title">ESTOU A SEUS SERVIÇOS</h4>
+          <div class="row">
+            <!-- ==== contato info item começo ==== -->
+            <div class="contato-info-item padd-15">
+              <div class="icon"><i class="fa fa-phone"></i></div>
+              <h4>Entre em contato WhatsApp
+              </h4>
+              <p>+55 (31)9 8489-0146</p>
+            </div>
+            <!-- ==== contato info item Fim ==== -->
+            <!-- ==== contato info item começo ==== -->
+            <div class="contato-info-item padd-15">
+              <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+              <h4>Endereço</h4>
+              <p>Belo Horizonte</p>
+            </div>
+            <!-- ==== contato info item Fim ==== -->
+            <!-- ==== contato info item começo ==== -->
+            <div class="contato-info-item padd-15">
+              <div class="icon"><i class="fa fa-envelope"></i></div>
+              <h4>Email</h4>
+              <p>pedropericeles@gmail.com</p>
+            </div>
+            <!-- ==== contato info item Fim ==== -->
+            <!-- ==== contato info item começo ==== -->
+            <div class="contato-info-item padd-15">
+              <div class="icon"><i class="fa fa-globe-europe"></i></div>
+              <h4>Website</h4>
+              <p>ww.dominance.com.br</p>
+            </div>
+            <!-- ==== contato info item começo ==== -->
+          </div>
+          <h3 class="contato-title padd-15"> ENVIE UM EMAIL</h3>
+          <h4 class="contato-sub-title padd-15">ESTOU SEMPRE ATENTO</h4>
+          <div class="row">
+            <div class="contato-form padd-15">
+              <form action="https://formsubmit.co/pedropericeles@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Nova mensagem do portfólio">
+                <input type="hidden" name="_template" value="table">
+                <div class="row">
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input type="text" name="nome" class="form-control" placeholder="Nome" required>
+                    </div>
+                  </div>
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input type="email" name="email" class="form-control" placeholder="Email" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <input type="text" name="assunto" class="form-control" placeholder="Assunto" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <textarea name="mensagem" class="form-control" placeholder="Mensagem" required></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==== contato Section Fim ==== -->
+    </div>
+    <!-- ==== Main Content Fim ==== -->
+  </div>
+  <!-- ==== Aside Container Fim ==== -->
+  <!-- ==== Style Switcher Começo ==== -->
+  <div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+      <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-nigth s-icon">
+      <i class="fas"></i>
+    </div>
+    <h4>Escolha um tema</h4>
+    <div class="colors">
+      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+      <span class="color-2" onclick="setActiveStyle('color-2')""></span>
+      <span class=" color-3" onclick="setActiveStyle('color-3')""></span>
+      <span class=" color-4" onclick="setActiveStyle('color-4')""></span>
+      <span class=" color-5" onclick="setActiveStyle('color-5')""></span>
+    </div>
+  </div>
+  <!-- ==== Style Switcher fim ==== -->
+  <!-- ==== JS Files ==== -->
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+        integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/script.js"></script>
+        <script src="js/style-switcher.js"></script>
 
 </html>
+<!-- ==== Rodapé Começo ==== -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2024 Pedro Augusto. Todos os direitos reservados.</p>
+  </div>
+</footer>
+<!-- ==== Rodapé Fim ==== -->
+
+</html>
+</body>
