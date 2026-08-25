@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 28" role="img" aria-labelledby="title">
+  <title>Bandeira dos Estados Unidos</title>
+  <rect width="40" height="28" rx="2" fill="#fff"/>
+  <path d="M0 0h40v3H0Zm0 6h40v3H0Zm0 6h40v3H0Zm0 6h40v3H0Zm0 6h40v1H0Z" fill="#b22234"/>
+  <path d="M0 0h18v15H0Z" fill="#3c3b6e"/>
+  <path d="m3 3 .5 1 .5-1 .5 1 .5-1 .5 1 .5-1 .5 1 .5-1 .5 1M3 6l.5 1 .5-1 .5 1 .5-1 .5 1 .5-1 .5 1 .5-1 .5 1M3 9l.5 1 .5-1 .5 1 .5-1 .5 1 .5-1 .5 1 .5-1 .5 1" fill="none" stroke="#fff" stroke-width=".8"/>
+</svg>

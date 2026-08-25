@@ -33,8 +33,8 @@
       <ul class="nav">
         <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
         <li><a href="#sobre"><i class="fa fa-user"></i> Sobre</a></li>
-        <li><a href="#servico"><i class="fa fa-list"></i>Serviços</a></li>
-        <li><a href="#portifolio"><i class="fa fa-briefcase"></i>Portifolio</a></li>
+        <li><a href="#experiencia"><i class="fa fa-list"></i>Experiência</a></li>
+        <li><a href="#portifolio"><i class="fa fa-briefcase"></i>Portifólio</a></li>
         <li><a href="#contato"><i class="fa fa-comments"></i>Contato</a></li>
       </ul>
     </div>
@@ -52,15 +52,15 @@
               <div class="social-links">
                 <a href="https://github.com/pedropericeles" class="btn social-link" target="_blank"
                   rel="noopener noreferrer" aria-label="GitHub">
-                  <i class="fa-brands fa-github"></i> 
+                  <i class="fa-brands fa-github"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/seu-usuario" class="btn social-link" target="_blank"
                   rel="noopener noreferrer" aria-label="LinkedIn">
-                  <i class="fa-brands fa-linkedin"></i> 
+                  <i class="fa-brands fa-linkedin"></i>
                 </a>
                 <a href="https://www.instagram.com/pedro_periceles" class="btn social-link" target="_blank"
                   rel="noopener noreferrer" aria-label="Instagram">
-                  <i class="fa-brands fa-instagram"></i> 
+                  <i class="fa-brands fa-instagram"></i>
                 </a>
               </div>
             </div>
@@ -72,72 +72,120 @@
       </section>
       <!-- ==== Home Content Fim ==== -->
       <!-- ==== Sobre Section Começo ==== -->
+      <!-- ==== Seção Sobre Começo ==== -->
       <section class="sobre section" id="sobre">
         <div class="container">
+
+          <!-- Botões de Idioma -->
+          <div class="row padd-15" style="margin-bottom: 20px; justify-content: flex-end;">
+            <div class="botoes-idioma">
+              <button class="btn idioma-btn ativo" type="button" data-idioma="pt" onclick="mudarIdioma('pt')"
+                aria-label="Mudar idioma para português" aria-pressed="true">
+                <img class="bandeira" src="imagens/Bandeiras/bandeira-brasil.svg" alt="" aria-hidden="true">
+                <span>PT</span>
+              </button>
+              <button class="btn idioma-btn" type="button" data-idioma="en" onclick="mudarIdioma('en')"
+                aria-label="Switch language to English" aria-pressed="false">
+                <img class="bandeira" src="imagens/Bandeiras/bandeira-eua.svg" alt="" aria-hidden="true">
+                <span>EN</span>
+              </button>
+            </div>
+          </div>
+
           <div class="row">
             <div class="section-title padd-15">
-              <h2>Sobre Mim</h2>
+              <h2 class="lang-pt">Sobre Mim</h2>
+              <h2 class="lang-en hidden">About Me</h2>
             </div>
           </div>
           <div class="row">
             <div class="sobre-content padd-15">
               <div class="row">
                 <div class="sobre-text padd-15">
-                  <h3>Eu sou Pedro Augusto e faço <span>Engenharia de Software</span></h3>
-                  <p>Sou um desenvolvedor com foco em Full Stack residente em Belo
-                    Horizonte, MG. Atualmente, estou cursando Engenharia de Software na Puc Minas, buscando sempre unir
-                    a
-                    teoria acadêmica com a prática do mercado.
+                  <!-- TÍTULOS -->
+                  <h3 class="lang-pt">Eu sou Pedro Augusto e faço <span>Engenharia de Software</span></h3>
+                  <h3 class="lang-en hidden">I am Pedro Augusto and I study <span>Software Engineering</span></h3>
 
-                    Minha jornada profissional começou com atuações como Suporte de TI e Designer Gráfico, experiências
-                    que me deram uma visão sistêmica valiosa sobre infraestrutura, resolução de problemas e estética de
-                    interfaces. Hoje, meu principal foco e interesse acadêmico estão voltados para o desenvolvimento
-                    Back-end, Redes de Computadores e Engenharia de Software.
+                  <!-- TEXTO EM PORTUGUÊS -->
+                  <div class="lang-pt">
+                    <p>Sou um desenvolvedor com foco em Full Stack residente em Belo Horizonte, MG. Atualmente, estou
+                      cursando Engenharia de Software na Puc Minas, buscando sempre unir a teoria acadêmica com a
+                      prática do mercado.</p>
+                    <br>
+                    <p>Minha jornada profissional começou com atuações como Suporte de TI e Designer Gráfico,
+                      experiências que me deram uma visão sistêmica valiosa sobre infraestrutura, resolução de problemas
+                      e estética de interfaces. Hoje, meu principal foco e interesse acadêmico estão voltados para o
+                      desenvolvimento Back-end, Redes de Computadores e Engenharia de Software.</p>
+                    <br>
+                    <p>Possuo conhecimentos fundamentais em HTML, CSS, JavaScript, além de linguagens como C e C#, e no
+                      momento estou focado em aprender e aprimorar Java. Estou na fase de descobrir e consolidar
+                      conceitos essenciais, colocando a mão na massa em projetos acadêmicos.</p>
+                    <br>
+                    <p>Sou movido por desafios e pela vontade de aprender. Meu objetivo é absorver o máximo de
+                      conhecimento prático, aprimorar minhas habilidades a cada linha de código e construir uma carreira
+                      sólida na área de tecnologia.</p>
+                  </div>
 
-                    Possuo conhecimentos fundamentais em HTML, CSS, JavaScript , além de linguagens como C e C#, e
-                    no momento estou focado em aprender aprimorar Java. Estou na fase de descobrir e consolidar
-                    conceitos
-                    essenciais, colocando a mão na massa em projetos acadêmicos.
-
-                    Sou movido por desafios e pela vontade de aprender. Meu objetivo é absorver o máximo de conhecimento
-                    prático, aprimorar minhas habilidades a cada linha de código e construir uma carreira sólida na área
-                    de tecnologia.
-
-                  </p>
+                  <!-- TEXTO EM INGLÊS -->
+                  <div class="lang-en hidden">
+                    <p>I am a developer with a focus on Full Stack based in Belo Horizonte, MG. Currently, I am studying
+                      Software Engineering at PUC Minas, always seeking to unite academic theory with market practice.
+                    </p>
+                    <br>
+                    <p>My professional journey began with roles in IT Support and Graphic Design, experiences that gave
+                      me a valuable systemic view of infrastructure, problem-solving, and interface aesthetics. Today,
+                      my main focus and academic interests are directed toward Back-end development, Computer Networks,
+                      and Software Engineering.</p>
+                    <br>
+                    <p>I have foundational knowledge in HTML, CSS, JavaScript, as well as languages like C and C#, and
+                      currently, I am focused on learning and improving my Java skills. I am in the process of
+                      discovering and consolidating essential concepts by getting hands-on with academic projects.</p>
+                    <br>
+                    <p>I am driven by challenges and a desire to learn. My goal is to absorb as much practical knowledge
+                      as possible, improve my coding skills with every line of code, and build a solid career in the
+                      tech field.</p>
+                  </div>
                 </div>
               </div>
               <div class="row">
                 <div class="informacao-pessoal padd-15">
                   <div class="row">
                     <div class="info-item padd-15">
-                      <P>Nascimento : <span>19 Jun 2003</span></P>
+                      <p><span class="lang-pt">Nascimento :</span><span class="lang-en hidden">Birthday :</span>
+                        <span>19 Jun 2003</span></p>
                     </div>
                     <div class="info-item padd-15">
-                      <P>Idade : <span>23</span></P>
+                      <p><span class="lang-pt">Idade :</span><span class="lang-en hidden">Age :</span> <span>23</span>
+                      </p>
                     </div>
                     <div class="info-item padd-15">
-                      <P>Website : <span>www.domain.com</span></P>
+                      <p>Email : <span>pedropericeles@gmail.com</span></p>
                     </div>
                     <div class="info-item padd-15">
-                      <P>Email : <span>pedropericeles@gmail.com</span></P>
+                      <p><span class="lang-pt">Escolaridade :</span><span class="lang-en hidden">Degree :</span> <span
+                          class="lang-pt">Cursando Engenharia de Software</span><span class="lang-en hidden">Studying
+                          Software Eng.</span></p>
                     </div>
                     <div class="info-item padd-15">
-                      <P> Escolariedade : <span>Cursando Engenharia de Software</span></P>
+                      <p><span class="lang-pt">Telefone :</span><span class="lang-en hidden">Phone :</span> <span>(31) 9
+                          8489-0146</span></p>
                     </div>
                     <div class="info-item padd-15">
-                      <P>Telefone : <span>(31)9 8489-0146</span></P>
+                      <p><span class="lang-pt">Cidade :</span><span class="lang-en hidden">City :</span> <span>Belo
+                          Horizonte</span></p>
                     </div>
                     <div class="info-item padd-15">
-                      <P>Cidade : <span>Belo Horizonte</span></P>
-                    </div>
-                    <div class="info-item padd-15">
-                      <P>Situação : <span>Em busca de um emprego</span></P>
+                      <p><span class="lang-pt">Situação :</span><span class="lang-en hidden">Status :</span> <span
+                          class="lang-pt">Em busca de um emprego</span><span class="lang-en hidden">Looking for a
+                          job</span></p>
                     </div>
                   </div>
                   <div class="row">
                     <div class="buttons padd-15">
-                      <a href="#" class="btn">Dowload Currículo</a>
-                      <a href="#contato" class="btn hire-me">Me Contrate</a>
+                      <a href="#" class="btn"><span class="lang-pt">Download Currículo</span><span
+                          class="lang-en hidden">Download CV</span></a>
+                      <a href="#contato" class="btn hire-me"><span class="lang-pt">Entre em Contato</span><span
+                          class="lang-en hidden">Contact Me</span></a>
                     </div>
                   </div>
                 </div>
@@ -146,29 +194,29 @@
                     <div class="skill-item padd-15">
                       <h5>JS</h5>
                       <div class="progresso">
-                        <div class="progresso-in" style="width: 50%;""></div>
-                        <div class=" skill-porcentagem">50%</div>
+                        <div class="progresso-in" style="width: 50%;"></div>
+                        <div class="skill-porcentagem">50%</div>
                       </div>
                     </div>
                     <div class="skill-item padd-15">
                       <h5>PHP</h5>
                       <div class="progresso">
-                        <div class="progresso-in" style="width: 66%;""></div>
-                        <div class=" skill-porcentagem">66%</div>
+                        <div class="progresso-in" style="width: 66%;"></div>
+                        <div class="skill-porcentagem">66%</div>
                       </div>
                     </div>
                     <div class="skill-item padd-15">
                       <h5>HTML</h5>
                       <div class="progresso">
-                        <div class="progresso-in" style="width: 80%;""></div>
-                        <div class=" skill-porcentagem">80%</div>
+                        <div class="progresso-in" style="width: 80%;"></div>
+                        <div class="skill-porcentagem">80%</div>
                       </div>
                     </div>
                     <div class="skill-item padd-15">
                       <h5>Bootstrap</h5>
                       <div class="progresso">
-                        <div class="progresso-in" style="width: 70%;""></div>
-                        <div class=" skill-porcentagem">70%</div>
+                        <div class="progresso-in" style="width: 70%;"></div>
+                        <div class="skill-porcentagem">70%</div>
                       </div>
                     </div>
                   </div>
@@ -176,7 +224,8 @@
               </div>
               <div class="row">
                 <div class="escolariedade padd-15">
-                  <h3 class="title">Escolariedade</h3>
+                  <h3 class="title lang-pt">Escolaridade</h3>
+                  <h3 class="title lang-en hidden">Education</h3>
                   <div class="row">
                     <div class="timeline-box padd-15">
                       <div class="timeline shadow-dark">
@@ -186,8 +235,11 @@
                           <h3 class="timeline-data">
                             <i class="fa fa-calendar"></i> 2019 - 2021
                           </h3>
-                          <h4 class="timeline-title">Escola Presidente Dutra</h4>
-                          <p class="timeline-text">Em 2021, formei-me na escola estadual presidente dutra.</p>
+                          <h4 class="timeline-title lang-pt">Escola Presidente Dutra</h4>
+                          <h4 class="timeline-title lang-en hidden">Presidente Dutra School</h4>
+                          <p class="timeline-text lang-pt">Em 2021, formei-me na escola estadual presidente dutra.</p>
+                          <p class="timeline-text lang-en hidden">In 2021, I graduated from the Presidente Dutra state
+                            school.</p>
                         </div>
                         <!-- ==== timeline item ==== -->
                         <div class="timeline-item">
@@ -195,11 +247,16 @@
                           <h3 class="timeline-data">
                             <i class="fa fa-calendar"></i> 2022
                           </h3>
-                          <h4 class="timeline-title">Curso de Jogos Digitais</h4>
-                          <p class="timeline-text">Comecei a estudar programação de jogos. Estou animado
-                            para mergulhar nos conceitos e linguagens de programação, ansioso para criar minhas próprias
+                          <h4 class="timeline-title lang-pt">Curso de Jogos Digitais</h4>
+                          <h4 class="timeline-title lang-en hidden">Digital Games Course</h4>
+                          <p class="timeline-text lang-pt">Comecei a estudar programação de jogos. Estou animado para
+                            mergulhar nos conceitos e linguagens de programação, ansioso para criar minhas próprias
                             experiências interativas. Cada linha de código é um passo em direção ao meu objetivo de
                             dominar essa arte e desenvolver jogos envolventes.</p>
+                          <p class="timeline-text lang-en hidden">I started studying game programming. I'm excited to
+                            dive into programming concepts and languages, eager to create my own interactive
+                            experiences. Every line of code is a step toward my goal of mastering this art and
+                            developing engaging games.</p>
                         </div>
                         <!-- ==== timeline item ==== -->
                         <div class="timeline-item">
@@ -207,20 +264,25 @@
                           <h3 class="timeline-data">
                             <i class="fa fa-calendar"></i> Fev 2023 - Dez 2023
                           </h3>
-                          <h4 class="timeline-title">Aulas de Manunteção de Computadores</h4>
-                          <p class="timeline-text">Aventurei-me em áreas desafiadoras, aceitando um treinamento para
-                            atuar
-                            na área de manutenção. Assim, trabalhando principalmente com o hardware de diversos
-                            computadores, aprendi muitas novas habilidades das quais não tinha conhecimento. Estou
-                            sempre buscando novos conhecimentos e aprimorando minha habilidade de manusear os
+                          <h4 class="timeline-title lang-pt">Aulas de Manutenção de Computadores</h4>
+                          <h4 class="timeline-title lang-en hidden">Computer Maintenance Classes</h4>
+                          <p class="timeline-text lang-pt">Aventurei-me em áreas desafiadoras, aceitando um treinamento
+                            para atuar na área de manutenção. Assim, trabalhando principalmente com o hardware de
+                            diversos computadores, aprendi muitas novas habilidades das quais não tinha conhecimento.
+                            Estou sempre buscando novos conhecimentos e aprimorando minha habilidade de manusear os
                             componentes presentes em uma máquina.</p>
+                          <p class="timeline-text lang-en hidden">I ventured into challenging areas, taking training to
+                            work in maintenance. Thus, working mainly with the hardware of various computers, I learned
+                            many new skills I was previously unaware of. I am always seeking new knowledge and improving
+                            my ability to handle computer components.</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="experiencia padd-15">
-                  <h3 class="title">Experiência</h3>
+                  <h3 class="title lang-pt">Experiência</h3>
+                  <h3 class="title lang-en hidden">Experience</h3>
                   <div class="row">
                     <div class="timeline-box padd-15">
                       <div class="timeline shadow-dark">
@@ -230,11 +292,14 @@
                           <h3 class="timeline-data">
                             <i class="fa fa-calendar"></i> Fev 2023 - Nov 2023
                           </h3>
-                          <h4 class="timeline-title">Suporte de TI</h4>
-                          <p class="timeline-text">Como meu primeiro emprego na área de TI consegui um estágio, em uma
-                            empresa onde atuei prestando o
-                            auxílio necessário aos funcionarios da mesma, realizando manunteções de hardware e de
-                            software.</p>
+                          <h4 class="timeline-title lang-pt">Suporte de TI</h4>
+                          <h4 class="timeline-title lang-en hidden">IT Support</h4>
+                          <p class="timeline-text lang-pt">Como meu primeiro emprego na área de TI consegui um estágio,
+                            em uma empresa onde atuei prestando o auxílio necessário aos funcionarios da mesma,
+                            realizando manutenções de hardware e de software.</p>
+                          <p class="timeline-text lang-en hidden">For my first job in the IT field, I got an internship
+                            at a company where I provided necessary assistance to employees, performing both hardware
+                            and software maintenance.</p>
                         </div>
                         <!-- ==== timeline item ==== -->
                         <div class="timeline-item">
@@ -242,22 +307,17 @@
                           <h3 class="timeline-data">
                             <i class="fa fa-calendar"></i> Dez 2023 - Mai 2024
                           </h3>
-                          <h4 class="timeline-title">Designer Gráfico</h4>
-                          <p class="timeline-text">Tentando aprimorar minhas habilidades na área de design, consegui
-                            passar um periodo de tempo
-                            atuando como designer gráfico, sempre busquei ampliar minha área de atuação sendo assim
-                            foquei meus esforçoes em
-                            conseguir absorver o máximo de conhecimento possível e conseguir evoluir na área.</p>
+                          <h4 class="timeline-title lang-pt">Designer Gráfico</h4>
+                          <h4 class="timeline-title lang-en hidden">Graphic Designer</h4>
+                          <p class="timeline-text lang-pt">Tentando aprimorar minhas habilidades na área de design,
+                            consegui passar um periodo de tempo atuando como designer gráfico, sempre busquei ampliar
+                            minha área de atuação sendo assim foquei meus esforços em conseguir absorver o máximo de
+                            conhecimento possível e conseguir evoluir na área.</p>
+                          <p class="timeline-text lang-en hidden">Trying to improve my design skills, I spent some time
+                            working as a graphic designer. I always sought to expand my field of action, so I focused my
+                            efforts on absorbing as much knowledge as possible and evolving in the field.</p>
                         </div>
-                        <!-- ==== timeline item ==== -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-data">
-                            <i class=""></i>
-                          </h3>
-                          <h4 class="timeline-title"></h4>
-                          <p class="timeline-text"></p>
-                        </div>
+                        <!-- ==== timeline item vazio (removido para limpar o código) ==== -->
                       </div>
                     </div>
                   </div>
@@ -267,6 +327,7 @@
           </div>
         </div>
       </section>
+      <!-- ==== Seção Sobre Fim ==== -->
       <!-- ==== Sobre Section Fim ==== -->
       <!-- ==== Serviços Section Começo ==== -->
       <section class="servico section" id="servico">
@@ -506,7 +567,7 @@
           <h4 class="contato-sub-title padd-15">ESTOU SEMPRE ATENTO</h4>
           <div class="row">
             <div class="contato-form padd-15">
-              <form action="https://formsubmit.co/pedropericeles@gmail.com" method="POST">
+              <form action="https://formsubmit.co/ajax/pedropericeles@gmail.com" method="POST">
                 <input type="hidden" name="_subject" value="Nova mensagem do portfólio">
                 <input type="hidden" name="_template" value="table">
                 <div class="row">
@@ -537,10 +598,21 @@
                 </div>
                 <div class="row">
                   <div class="form-item col-12 padd-15">
-                    <button type="submit" class="btn">Enviar Mensagem</button>
+                    <button type="submit" class="btn submit-button">
+                      <i class="fa fa-paper-plane"></i> Enviar Mensagem
+                    </button>
                   </div>
                 </div>
               </form>
+              <div class="form-success" hidden aria-live="polite">
+                <div class="form-success-icon"><i class="fa fa-check"></i></div>
+                <h3>Mensagem enviada!</h3>
+                <p>Obrigado pelo contato. Recebi sua mensagem e responderei assim que possível.</p>
+                <button type="button" class="btn new-message-button">
+                  <i class="fa fa-arrow-left"></i> Enviar nova mensagem
+                </button>
+              </div>
+              <div class="form-status" role="status" aria-live="polite"></div>
             </div>
           </div>
         </div>
