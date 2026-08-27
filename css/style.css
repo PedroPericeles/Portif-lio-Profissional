@@ -728,6 +728,10 @@ h3.my-profession {
 }
 
 /*CONTACT*/
+.contato .contato-info-row {
+    justify-content: center;
+}
+
 .contato-title {
     color: var(--skin-color);
     text-align: center;
