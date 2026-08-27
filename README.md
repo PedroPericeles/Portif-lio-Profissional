@@ -20,18 +20,32 @@ Criar uma interface moderna, responsiva e acessível para apresentação profiss
 ## 📂 Estrutura inicial do projeto
 
 portfolio/
-├── index.html
+├── .vscode/
+│   └── settings.json
 ├── css/
 │   ├── skins/
 │   │   ├── color-1.css
-│   │   └── (outras cores...)
+│   │   ├── color-2.css
+│   │   ├── color-3.css
+│   │   ├── color-4.css
+│   │   └── color-5.css
 │   ├── style.css
 │   └── style-switcher.css
+├── imagens/
+│   ├── Bandeiras/
+│   │   ├── bandeira-brasil.svg
+│   │   └── bandeira-eua.svg
+│   ├── Projetos/
+│   │   ├── imagem-portCRU.png
+│   │   ├── imagem-portJogo.png
+│   │   ├── imagem-portLocaApp.png
+│   │   └── imagem-portRHsoft.png
+│   └── IMG-portifolio.jpg
 ├── js/
 │   ├── script.js
 │   └── style-switcher.js
-├── imagens/ Portifolio
-│   └── imagem.jpeg
+├── index.html
+├── LICENSE
 └── README.md
 
 ## 🚀 Como executar
