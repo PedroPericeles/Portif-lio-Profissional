@@ -17,8 +17,9 @@ Criar uma interface moderna, responsiva e acessível para apresentação profiss
 - GitHub
 - Figma
 
-## 📂 Estrutura inicial do projeto
+## 📂 Estrutura do projeto
 
+```text
 portfolio/
 ├── .vscode/
 │   └── settings.json
@@ -47,6 +48,7 @@ portfolio/
 ├── index.html
 ├── LICENSE
 └── README.md
+```
 
 ## 🚀 Como executar
 
