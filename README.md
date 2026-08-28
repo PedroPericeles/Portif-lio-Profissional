@@ -1,4 +1,4 @@
-# Portfólio Profissional
+# Portifólio Profissional
 
 ## 📌 Sobre o projeto
 
