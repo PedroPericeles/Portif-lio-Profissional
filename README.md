@@ -2,7 +2,7 @@
 
 ## 📌 Sobre o projeto
 
-Website de portfólio profissional desenvolvido para apresentar minha trajetória, habilidades, projetos, experiências e formas de contato.
+Website de portifólio profissional desenvolvido para apresentar minha trajetória, habilidades, projetos, experiências e formas de contato.
 
 ## 🎯 Objetivo
 
