@@ -36,6 +36,9 @@ portfolio/
 │   ├── Bandeiras/
 │   │   ├── bandeira-brasil.svg
 │   │   └── bandeira-eua.svg
+│   ├── Gif/
+│   │   ├── Projeto-4.mp4
+│   │   └── Projeto-5.mp4
 │   ├── Projetos/
 │   │   ├── imagem-portCRU.png
 │   │   ├── imagem-portJogo.png
