@@ -1,5 +1,11 @@
 # Portifólio Profissional
 
+## 🌐 Acesso ao Projeto
+O projeto está online e totalmente funcional! 
+**[CLIQUE AQUI PARA ACESSAR O SITE](https://portif-lio-profissional-mocha.vercel.app)**
+
+---
+
 ## 📌 Sobre o projeto
 
 Website de portifólio profissional desenvolvido para apresentar minha trajetória, habilidades, projetos, experiências e formas de contato.
@@ -13,10 +19,11 @@ Criar uma interface moderna, responsiva e acessível para apresentação profiss
 - HTML5
 - CSS3
 - JavaScript
-- Git
-- GitHub
+- Git e GitHub
 - Figma
-
+- Font Awesome (Ícones)
+- Hospedagem: Vercel
+  
 ## 📂 Estrutura do projeto
 
 ```text
@@ -53,11 +60,28 @@ portfolio/
 └── README.md
 ```
 
-## 🚀 Como executar
+## 📌 Pré-requisitos
+Um navegador web moderno (Google Chrome, Firefox, Edge, etc.).
+Editor de código-fonte (recomendamos o Visual Studio Code).
+(Recomendado) Extensão Live Server instalada no VS Code para visualizar as alterações em tempo real.
 
-1. Clone o repositório.
-2. Entre na pasta do projeto.
-3. Abra o arquivo `index.html` no navegador.
+## 🚀 Como rodar o projeto localmente
+Abra o terminal (ou Git Bash) e clone este repositório executando o comando:
+
+Bash
+git clone [https://github.com/PedroPericeles/Portif-lio-Profissional.git](https://github.com/PedroPericeles/Portif-lio-Profissional.git)
+Navegue até a pasta do projeto baixado.
+Abra a pasta inteira no seu editor de código (VS Code).
+Para visualizar o site, você pode simplesmente dar um duplo clique no arquivo index.html para abri-lo no seu navegador padrão, OU clicar com o botão direito sobre o index.html dentro do VS Code e selecionar "Open with Live Server".
+
+## 🛠️ Guia de Desenvolvimento e Customização
+Se você deseja explorar , siga a estrutura abaixo para encontrar cada funcionalidade:
+
+Conteúdo Principal (Textos e Imagens): Toda a base de texto, inserção de novos cards de projetos (incluindo os vídeos de demonstração) e links estruturais estão no arquivo index.html.
+Estilização e Layout: A organização da página e a responsividade (adaptação para mobile) são controladas pelo arquivo css/style.css.
+Temas de Cores (Skins): As variáveis que definem a cor principal de destaque do site ficam separadas dentro da pasta css/skins/ (ex: color-1.css).
+Lógica de Interface (Dark Mode e Painel Lateral): A troca de cores da interface e o modo claro/escuro são gerenciados pelo arquivo js/style-switcher.js.
+Tradução e Interações Nativas: A manipulação do DOM para o sistema bilíngue (Português/Inglês) da seção "Sobre Mim" e as configurações do menu lateral encontram-se no arquivo principal js/script.js.
 
 ## 🎨 Protótipos (Wireframes)
 
@@ -83,10 +107,12 @@ Os protótipos de média fidelidade foram desenvolvidos no Figma para estruturar
 
 ## 📋 Funcionalidades
 
-- Implementação do layout principal (organização visual base)
-- Navegação funcional entre as seções (Home, Sobre, Serviços, Portfólio, Contato)
-- Layout responsivo para diferentes tamanhos de tela
-- Troca de temas (Style Switcher)
+- Navegação Funcional: Menu lateral com transição fluida entre as seções.
+- Tradução Dinâmica (PT/EN): Sistema bilíngue integrado na seção "Sobre Mim" utilizando JavaScript.
+- Timeline Interativa: Apresentação cronológica de Projetos (com inserção de vídeos nativos demonstrando o uso) e Experiências Profissionais/Sociais.
+- Formulário de Contato Funcional: Interface com validação nativa de campos.
+- Layout Responsivo: Adaptação completa para dispositivos móveis, tablets e desktops, com ajuste automático do menu lateral.
+- Customização de Interface: Troca de temas de cores (Style Switcher) e Dark Mode configurados.
 
 ## 👨‍💻 Autor
 
