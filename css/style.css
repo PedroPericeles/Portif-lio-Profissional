@@ -22,6 +22,11 @@ body {
     font-family: 'Poppins' sans-serif;
 }
 
+.main-content {
+    padding-left: 270px;
+    min-height: 100vh;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -212,6 +217,8 @@ ul {
     display: none;
     align-items: center;
     justify-content: center;
+    z-index: 30;
+    transition: all 0.3s ease;
 }
 
 .aside .nav-toggler span {
@@ -220,6 +227,7 @@ ul {
     background: var(--skin-color);
     display: inline-block;
     position: relative;
+    transition: all 0.3s ease;
 }
 
 .aside .nav-toggler span::before {
@@ -230,6 +238,7 @@ ul {
     position: absolute;
     top: -6px;
     left: 0;
+    transition: all 0.3s ease;
 }
 
 .aside .nav-toggler span::after {
@@ -240,6 +249,21 @@ ul {
     position: absolute;
     top: 6px;
     left: 0;
+    transition: all 0.3s ease;
+}
+
+.aside .nav-toggler.open span {
+    background: transparent;
+}
+
+.aside .nav-toggler.open span::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.aside .nav-toggler.open span::after {
+    transform: rotate(-45deg);
+    top: 0;
 }
 
 .aside .nav {
@@ -876,6 +900,10 @@ h3.my-profession {
     text-align: center;
 }
 
+.form-status.info {
+    color: #0f766e;
+}
+
 .form-status.error {
     color: #d64545;
 }
@@ -895,10 +923,19 @@ h3.my-profession {
 @media (max-width:1199px) {
     .aside {
         left: -270px;
+        transition: left 0.3s ease;
+    }
+
+    .aside.open {
+        left: 0;
     }
 
     .main-content {
         padding-left: 0;
+    }
+
+    .nav-toggler {
+        display: flex !important;
     }
 
     .sobre .sobre-content .informacao-pessoal .info-item p span {
@@ -929,18 +966,28 @@ h3.my-profession {
 @media (max-width:767px) {
 
     .aside {
-        left: 0;
+        left: -100%;
         top: 0;
-        width: 100%;
-        height: auto;
-        min-height: 112px;
-        padding: 12px 10px;
-        display: block;
+        width: min(80vw, 260px);
+        height: 100vh;
+        min-height: 100vh;
+        padding: 20px 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        border-right: 1px solid var(--bg-black-50);
+        box-shadow: 0 0 25px rgba(48, 46, 77, 0.18);
+    }
+
+    .aside.open {
+        left: 0;
     }
 
     .aside .logo {
         position: static;
         text-align: center;
+        margin-bottom: 20px;
     }
 
     .aside .logo a {
@@ -953,15 +1000,16 @@ h3.my-profession {
     }
 
     .aside .nav-toggler {
-        display: none;
+        display: flex;
+        left: 16px;
+        top: 16px;
     }
 
     .aside .nav {
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 4px 8px;
-        margin-top: 12px;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
     }
 
     .aside .nav li {
@@ -969,17 +1017,18 @@ h3.my-profession {
     }
 
     .aside .nav li a {
-        font-size: 13px;
-        padding: 5px 4px;
-        border-bottom: 0;
+        font-size: 15px;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--bg-black-50);
+        border-radius: 8px;
     }
 
     .aside .nav li a i {
-        margin-right: 4px;
+        margin-right: 8px;
     }
 
     .main-content {
-        padding-top: 112px;
+        padding-top: 0;
     }
 
     .home .home-img {

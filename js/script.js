@@ -9,17 +9,37 @@ if (typingElement) {
   });
 }
 
-const nav = document.querySelector(".nav"),
-  navlist = nav.querySelectorAll("li"),
-  totalNavList = navlist.length;
+const nav = document.querySelector(".nav");
+const navlist = nav ? nav.querySelectorAll("li") : [];
+const totalNavList = navlist.length;
+const aside = document.querySelector(".aside");
+const navToggler = document.querySelector(".nav-toggler");
+
 for (let i = 0; i < totalNavList; i++) {
   const a = navlist[i].querySelector("a");
   a.addEventListener("click", function () {
     for (let j = 0; j < totalNavList; j++) {
-      navlist[j].querySelector("a").classList.remove("active")
+      navlist[j].querySelector("a").classList.remove("active");
     }
-    this.classList.add("active")
-  })
+    this.classList.add("active");
+
+    if (aside) {
+      aside.classList.remove("open");
+    }
+
+    if (navToggler) {
+      navToggler.classList.remove("open");
+    }
+  });
+}
+
+if (navToggler) {
+  navToggler.addEventListener("click", () => {
+    navToggler.classList.toggle("open");
+    if (aside) {
+      aside.classList.toggle("open");
+    }
+  });
 }
 /* =========================================
    Função de Tradução Dinâmica (PT / EN)
@@ -62,39 +82,60 @@ const formStatus = document.querySelector(".form-status");
 const newMessageButton = document.querySelector(".new-message-button");
 const submitButton = document.querySelector(".submit-button");
 
-contactForm.addEventListener("submit", async (event) => {
-  event.preventDefault();
-  submitButton.disabled = true;
-  submitButton.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Enviando...';
-  formStatus.textContent = "";
-  formStatus.className = "form-status";
-
-  try {
-    const response = await fetch(contactForm.action, {
-      method: "POST",
-      body: new FormData(contactForm),
-      headers: { Accept: "application/json" }
-    });
-
-    if (!response.ok) {
-      throw new Error("Falha no envio");
-    }
-
+if (contactForm && formSuccess && formStatus && newMessageButton && submitButton) {
+  const showSuccessState = () => {
     contactForm.reset();
     contactForm.hidden = true;
     formSuccess.hidden = false;
-  } catch (error) {
-    formStatus.textContent = "Não foi possível enviar agora. Tente novamente em instantes.";
-    formStatus.classList.add("error");
-  } finally {
-    submitButton.disabled = false;
-    submitButton.innerHTML = '<i class="fa fa-paper-plane"></i> Enviar Mensagem';
-  }
-});
+    formStatus.textContent = "Mensagem enviada com sucesso!";
+    formStatus.className = "form-status info";
+  };
 
-newMessageButton.addEventListener("click", () => {
-  formSuccess.hidden = true;
-  contactForm.hidden = false;
-  formStatus.textContent = "";
-  contactForm.querySelector("input").focus();
-});
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    submitButton.disabled = true;
+    submitButton.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Enviando...';
+    formStatus.textContent = "";
+    formStatus.className = "form-status";
+
+    const isLocalFile = window.location.protocol === "file:";
+
+    if (isLocalFile) {
+      showSuccessState();
+      submitButton.disabled = false;
+      submitButton.innerHTML = '<i class="fa fa-paper-plane"></i> Enviar Mensagem';
+      setTimeout(() => {
+        contactForm.submit();
+      }, 50);
+      return;
+    }
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: new FormData(contactForm),
+        headers: { Accept: "application/json" }
+      });
+
+      if (!response.ok) {
+        throw new Error("Falha no envio");
+      }
+
+      showSuccessState();
+    } catch (error) {
+      formStatus.textContent = "Não foi possível enviar agora. Tente novamente em instantes.";
+      formStatus.classList.add("error");
+    } finally {
+      submitButton.disabled = false;
+      submitButton.innerHTML = '<i class="fa fa-paper-plane"></i> Enviar Mensagem';
+    }
+  });
+
+  newMessageButton.addEventListener("click", () => {
+    formSuccess.hidden = true;
+    contactForm.hidden = false;
+    formStatus.textContent = "";
+    formStatus.className = "form-status";
+    contactForm.querySelector("input").focus();
+  });
+}
