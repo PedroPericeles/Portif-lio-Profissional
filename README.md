@@ -81,7 +81,7 @@ portfolio/
 - Estilização e Layout: A organização da página e a responsividade (adaptação para mobile) são controladas pelo arquivo css/style.css.
 - Temas de Cores (Skins): As variáveis que definem a cor principal de destaque do site ficam separadas dentro da pasta css/skins/ (ex: color-1.css).
 - Lógica de Interface (Dark Mode e Painel Lateral): A troca de cores da interface e o modo claro/escuro são gerenciados pelo arquivo js/style-switcher.js.
-v Tradução e Interações Nativas: A manipulação do DOM para o sistema bilíngue (Português/Inglês) da seção "Sobre Mim" e as configurações do menu lateral encontram-se no arquivo principal js/script.js.
+- Tradução e Interações Nativas: A manipulação do DOM para o sistema bilíngue (Português/Inglês) da seção "Sobre Mim" e as configurações do menu lateral encontram-se no arquivo principal js/script.js.
 
 ## 🎨 Protótipos (Wireframes)
 
