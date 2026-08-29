@@ -69,7 +69,7 @@ portfolio/
 - Abra o terminal (ou Git Bash) e clone este repositório executando o comando:=
   
 - Bash
-- git clone [https://github.com/PedroPericeles/Portif-lio-Profissional.git](https://github.com/PedroPericeles/Portif-lio-Profissional.git)
+ git clone [https://github.com/PedroPericeles/Portif-lio-Profissional.git](https://github.com/PedroPericeles/Portif-lio-Profissional.git)
 - Navegue até a pasta do projeto baixado.
 - Abra a pasta inteira no seu editor de código (VS Code).
 - Para visualizar o site, você pode simplesmente dar um duplo clique no arquivo index.html para abri-lo no seu navegador padrão, OU clicar com o botão direito sobre o index.html dentro do VS Code e selecionar "Open with Live Server".
