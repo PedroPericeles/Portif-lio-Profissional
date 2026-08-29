@@ -96,3 +96,4 @@ Pedro Augusto Periceles de Paiva Milarde
 
 - **GitHub:** (https://github.com/PedroPericeles/Portif-lio-Profissional)
 - **Figma:** https://www.figma.com/design/ivAzAGIBmCISmArPOBIMTG/PORTIFOLIO?node-id=0-1&t=ngCzFc9Zt1ecFoAb-1
+- **Versel** portif-lio-profissional-mocha.vercel.app
