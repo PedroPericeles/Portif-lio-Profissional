@@ -2,7 +2,7 @@ const typingElement = document.querySelector(".typing");
 
 if (typingElement) {
   var typed = new Typed(".typing", {
-    strings: ["Engenheiro de Software", "Web Developer"],
+    strings: ["Engenheiro de Software", "Web Developer" , "Desenvolvedor Full Stack"],
     typeSpeed: 100,
     backSpeed: 60, 
     loop: true
